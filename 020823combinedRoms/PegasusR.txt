@@ -1,5 +1,9 @@
 Pegasus Combined Eproms
 P27XXXXX
+Note: Certain of the Pegasus software must be located at address 0000 to work. 
+Thus these eproms must be located at address 0000 - 3FFF, when using a 32K eprom the highest address line is selected high or low with a switch.
+
+16K Eprom files
 
 P27128_1 
 0000  PASCALa  1.0
@@ -12,6 +16,9 @@ P27128_2
 1000  TANK     1.2
 2000  BASIC    1.1
 3000  WORD     1.1
+
+
+32K Eprom files
 
 P27256_1
 0000  MAD1.1
