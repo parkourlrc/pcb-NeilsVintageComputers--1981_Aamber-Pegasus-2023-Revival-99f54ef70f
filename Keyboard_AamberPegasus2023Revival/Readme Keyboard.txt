@@ -7,5 +7,6 @@ The 8x diodes can be any schottkey diode, I used 1N5819 as I had lots but they a
 The keyswitches are Cheery 5-pin, I have included links to the ones I used, the Black ones have no click and a sort of vintage feel.
 The spacebar doesnt have a stabiliser, I just added extra switches at either end which seems to work ok.
 
-There is a link to the keycaps I used, be careful if substituting that the non-alphanumerical keys of longer than one keyswitch size are the correct length AND the position of the switch attachment is in the same location
+There is a link to the keycaps I used, be careful if substituting that the non-alphanumerical keys of longer than one keyswitch
+size are the correct length AND the position of the switch attachment is in the same location
 
