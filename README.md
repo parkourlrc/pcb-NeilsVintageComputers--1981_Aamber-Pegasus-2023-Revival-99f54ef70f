@@ -27,11 +27,19 @@ There are two unused LEDs on the Keyboard pcb intended for use as Power On and C
 
 
 NOTES/ISSUES:
-- The resistor on the rear of the pcb is a pullup on the bit7 input to the video output shift register (not in the original Pegasus design) to try and remove a small video disturbance at the top of the screen before the first video character line when in graphics mode. It definalely helped but there is still a very small disturbance. Need to look into this further.
+- The resistor on the rear of the pcb is a pullup on the bit7 input to the video output shift register (not in the original Pegasus design) to try and remove a small video disturbance at the top of the screen before the first video character line when in graphics mode. It definalely helped but there is still a small disturbance. Need to look into this further.
+Further investigation found a faulty 6809 driving one or two of the address lines to only about 2.5V
+Needs further investigation and maybe a "improved" design board to be produced as it looks like the original Pegasus design has many more than 4 LS-TTL loads, as specified in the 6809 datasheet, on the address and data lines. It did still work ok with six out of seven 6809 chips I tried. Just one didnt work 100% reliably.
 - The 127p capacitor C10 on the dotclock oscillator can be adjusted to trim the dotclock frequency. I noticed on my build that the shift register was clocking out a extra bit making the characters wider than they should be, not really noticeable in text mode but in inverse char graphics mode there would be a "lit up" column of dots at the right of each character.  If the dotclock is too slow the oposite will happen which is noticeable in both text and graphics mode as trimming of the right most dot of a character. I ended up with 138pF (120p + 18p).
 - The PCB although the same dimension as the original cant be slid into the original Pegasus square white case as I inadvertently laid the power tracks too close to the edge of the pcb!
 - The resistor footprint used is a bit large, needs reducing if producing a update to the board.
   
+Here are some phtos of the finished "Pegasus"
+
+![AamberPegasus1](https://github.com/user-attachments/assets/ee8e4c3a-00ed-4e52-9f55-4bb676f7c3f3)
+
+![AamberPegasus2](https://github.com/user-attachments/assets/4dcb14b5-e789-4363-8aa2-9c30f81ba599)
+
 
 
 Neil
